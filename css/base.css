@@ -7,7 +7,7 @@
 header, footer{
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(126, 175, 118);
+    background-color:rgb(126, 175, 118); /*color*/
     color:whitesmoke;
     border-radius: 15px;
     align-items: center;
