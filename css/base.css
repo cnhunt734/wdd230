@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color:beige;
+    color:black;
+    border-radius: 25px;
+    border: 5px solid brown;
+}
+
+header, footer, main{
+    max-width: 36rem;
+    margin: 0 auto; /*center*/
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#prof-pic {
+    width: 150px;
+    height: auto;
+}
