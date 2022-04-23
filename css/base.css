@@ -5,26 +5,32 @@
 }
 
 header, footer{
-    background-color:beige;
-    color:black;
-    border-radius: 25px;
-    border: 5px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(126, 175, 118);
+    color:whitesmoke;
+    border-radius: 15px;
+    align-items: center;
+    border: 5px outset rgb(126, 175, 118);
 }
 
 header, footer, main{
     max-width: 36rem;
     margin: 0 auto; /*center*/
     padding: 2rem;
+    font-family: Courier, monospace;
 }
 
 header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    justify-content: center;
 }
 
 #prof-pic {
     width: 150px;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
