@@ -10,7 +10,7 @@ footer {
     flex-wrap: wrap;
     background-color: rgb(126, 175, 118);
     /*color*/
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     align-items: center;
     border: 5px outset rgb(126, 175, 118);
