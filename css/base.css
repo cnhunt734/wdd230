@@ -4,19 +4,24 @@
     box-sizing: border-box;
 }
 
-header, footer{
+header,
+footer {
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(126, 175, 118); /*color*/
-    color:whitesmoke;
+    background-color: rgb(126, 175, 118);
+    /*color*/
+    color: whitesmoke;
     border-radius: 15px;
     align-items: center;
     border: 5px outset rgb(126, 175, 118);
 }
 
-header, footer, main{
+header,
+footer,
+main {
     max-width: 36rem;
-    margin: 0 auto; /*center*/
+    margin: 0 auto;
+    /*center*/
     padding: 2rem;
     font-family: Courier, monospace;
 }
@@ -25,6 +30,7 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 footer {
     justify-content: center;
 }
