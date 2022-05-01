@@ -1,0 +1,9 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items:center;
+}
+header,footer,main{
+    max-width: 72em;
+}
