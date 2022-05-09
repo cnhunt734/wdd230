@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, main, footer {
+            padding:5px;
+        }
+        header {
+            background-color: rgb(108, 108, 195);
+        }
+        main {
+            max-width: 60rem;
+            margin: 0 auto;
+            
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .flex-nav ul {
+            display: flex;
+            flex-direction: column; 
+            list-style-type: none;
+            align-items: center;
+        }
+        .flex-nav a {
+            display: block;
+            padding: 0.8rem 1 rem;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .flex-nav a:hover{
+            background-color: yellow;
+            color: black;
+        }
+
+        @media screen and (min-width: 48rem)
+        {
+            .flex-nav ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex Demo</h1>
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-main">
+        <section>
+            <h2>Sample Section</h2>
+            <div><img src="https://picsum.photos/300/300?random=1" alt="pic1"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum quam dolorem. 
+                Consequatur nostrum aspernatur, debitis numquam accusantium dolorum, esse quasi
+                 eveniet molestiae sapiente fugiat voluptate at corrupti officia hic.</p>
+        </section>
+        <section>
+            <h2>Sample Section</h2>
+            <div><img src="https://picsum.photos/300/300?random=2" alt="pic2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum quam dolorem. 
+                Consequatur nostrum aspernatur, debitis numquam accusantium dolorum, esse quasi
+                eveniet molestiae sapiente fugiat voluptate at corrupti officia hic.</p>
+        </section>
+    </main>
+</body>
+</html>
