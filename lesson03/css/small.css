@@ -21,8 +21,8 @@ h3 {
     font-size: 24px;
 }
 main {
-    color: gold;
-    background-color: darkolivegreen;
+    color:  #FFF5EE;
+    background-color: #556B2F;
     margin: 0 auto;
 }
 img {
@@ -40,7 +40,7 @@ img {
 }
 .nav a {
     display: block;
-    padding: 0.8rem 1 rem;
+    padding: 0.8rem 1rem;
     text-decoration: none;
     color: beige;
 }
@@ -79,7 +79,7 @@ footer {
     font-size: 20px;
 }
 #text-box{
-    background-color: gold;
+    background-color:  #FFF5EE;
     padding:10px;
     border: 1px;
     width: 5em;
@@ -107,7 +107,7 @@ footer {
     height: 5em;
 }
 #main-box{
-    background-color: darkolivegreen;
+    background-color: #556B2F;
     padding:10px;
     border: 5px solid black;
     width: 5em;
@@ -157,7 +157,7 @@ footer {
     font-size: 20px;
     font-family: Andale Mono, monospace;
     padding: 30px;
-    color: rgb(255, 215, 0);
+    color: #FFF5EE;
     text-align: center;
     border: 1px solid black;
 }
@@ -165,7 +165,7 @@ footer {
     font-size: 36px;
     font-family: Andale Mono, monospace;
     padding: 20px;
-    color: rgb(255, 215, 0);
+    color:  #FFF5EE;
     text-align: center;
     border: 1px solid black;
 }
@@ -173,7 +173,7 @@ footer {
     font-size: 24px;
     font-family: Andale Mono, monospace;
     padding: 24px;
-    color: rgb(255, 215, 0);
+    color:  #FFF5EE;
     text-align: center;
     border: 1px solid black;
 }
