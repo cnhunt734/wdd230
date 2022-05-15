@@ -1,0 +1,64 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.big-box {
+    grid-column: 1/4;
+}
+.med-box {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.long-box {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    height: auto;
+}
+.spotlight{
+    width: 22em;
+    margin: 10px;
+    padding: 10px;
+}
+#spot1{
+    
+    margin: auto;
+}
+#spot2{
+    margin: auto;
+}
+#spot3{
+    margin: auto;
+}
+#joinbx {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+#eventbx {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+#weatherbx {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+#foot1 {
+    flex-direction: row;
+}
+#foot-icon {
+    height: 136px;
+    width: auto;
+}
+#address {
+    margin: auto 0;
+    padding-right: 5em;
+}
+#contact {
+    margin: auto 0;
+    padding-left: 5em;
+}
+
+
