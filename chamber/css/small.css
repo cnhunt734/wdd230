@@ -75,7 +75,12 @@ a:visited{
     text-decoration: none;
 }
 .more-info {
-    color: rgb(2, 0, 128)
+    color: rgb(2, 0, 128);
+    text-shadow: 1px 1px 10px yellow;
+}
+.website {
+    color: rgb(2, 0, 128);
+    text-shadow: 1px 1px 10px yellow;
 }
 #spot1 {
     padding-bottom: 0;
