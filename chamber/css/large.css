@@ -109,8 +109,11 @@ h2 {
     margin: 0 .5em 0 .5em;
     height: 11.5em;
 }
+#hero-join {
+    bottom: -20em;
+}
 #spot3 {
-    display: block;
+    display: flex;
 }
 
 .nav {

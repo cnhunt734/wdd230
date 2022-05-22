@@ -13,3 +13,11 @@ const mainnav = document.querySelector('.nav')
 menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 window.onresize = () => {if (window.innerWidth > 1080) mainnav.classList.remove('responsive')};
+
+let date=  new Date();
+
+date.getDay();
+
+if (date.getDay() == 1 || date.getDay() == 2) {
+    document.querySelector('#banner').style.display = "block";
+}

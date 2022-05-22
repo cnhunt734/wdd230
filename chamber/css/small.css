@@ -2,32 +2,81 @@
     margin: 2px;
     padding: 0 8px 0 8px;
 }
+#banner {
+    display: none;
+    background-color: #eed603;
+    color: #000000;
+    margin: auto 15px;
+    text-align: center;
+    font-weight: bold;
+}
 section {
     margin: 3px;
     border: 1px solid black;
     color:  #FFF5EE;
     background-color: #556B2F;
     height: 12em;
+    font-size: 20px;
 }
 .long-box {
-    height: 24em;
+    height: 35em;
     order: 2;
 }
 .spotlight {
     border: 1px solid black;
     margin: 0 1em 0 1em;
     height: 10.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spot-contact {
+    font-size: 16px;
+    color: #f7e99f;
 }
 .big-box {
     order: -2;
+    background-image: url(https://www.nps.gov/dino/planyourvisit/images/Dinosaur-Sign_1.jpg);
+    color: black;
+    text-shadow: 2px 2px 10px #556B2F
 }
 #eventbx {
     order: -1;
+    text-align: center;
 }
 #weatherbx {
     order: 0;
+    max-width: 16em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
+#hero-div{
+    position: relative;
+}
+#hero-join {
+    position: absolute;
+    bottom: -2em;
+    right: 1.5em;
+    height: 60px;
+    border-radius: 20px;
+    padding-top: 20px;
+    background-color: rgb(221, 214, 21);
+    color: rgb(19, 57, 29);
+}
+#hero-txt {
+    color: black;
+    text-shadow: 2px 2px 10px #556B2F
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+.more-info {
+    color: rgb(2, 0, 128)
+}
 #spot1 {
     padding-bottom: 0;
     margin-top: 1.5em;
@@ -38,8 +87,49 @@ section {
 #spot3 {
     display: none;
 }
+
+.spot-icon {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: auto;
+}
+.spot-txt {
+    font-size: 20px;
+    color: rgb(245, 245, 220);
+    text-align: center;
+}
 #joinbx {
     display: none;
+}
+#weather-div {
+    grid-column: 1/3;
+}
+.weather-icon {
+    height: 100px;
+}
+#weather-temp {
+    font-size: 40px;
+    margin: auto 0;
+}
+#weather-desc{
+    grid-column: 1/3;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.weather-txt{
+    padding: 1px;
+    font-size: 16px;
+}
+#news {
+    padding: 12px;
+}
+.small-box p{
+    text-align: center;
+    font-size: 18px;
 }
 header, footer {
     display: flex;
@@ -49,6 +139,12 @@ header, footer {
     padding: 0;
     margin: 0;
 }
+main div {
+    font-size: 28px;
+    color: rgb(255, 255, 103);
+    text-shadow: 2px 2px 15px #000000
+}
+
 .social {
     height: 36px;
     width: auto;
@@ -110,7 +206,7 @@ h3 {
 .header-text {
     font-family: Andale Mono, monospace;
     display: grid;
-    grid-template-columns: 4em 15em;
+    grid-template-columns: 4em auto;
 }
 main {
     display: grid;
@@ -153,7 +249,9 @@ nav {
 .responsive li {
 	display: block;
 }
-
+.menu {
+    font-size: 25px;
+}
 .responsive a.menu::before {
 	content: "❌ ";
 }
