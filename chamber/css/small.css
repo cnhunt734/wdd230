@@ -36,7 +36,6 @@ section {
 }
 .big-box {
     order: -2;
-    background-image: url(https://www.nps.gov/dino/planyourvisit/images/Dinosaur-Sign_1.jpg);
     color: black;
     text-shadow: 2px 2px 10px #556B2F
 }
@@ -53,11 +52,12 @@ section {
 }
 #hero-div{
     position: relative;
+    
 }
 #hero-join {
     position: absolute;
-    bottom: -2em;
     right: 1.5em;
+    bottom: 11em;
     height: 60px;
     border-radius: 20px;
     padding-top: 20px;
@@ -66,7 +66,15 @@ section {
 }
 #hero-txt {
     color: black;
-    text-shadow: 2px 2px 10px #556B2F
+    text-shadow: 2px 2px 10px #556B2F;
+    
+}
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin: 0;
+    padding: 0; 
 }
 a:link{
     text-decoration: none;
@@ -178,6 +186,7 @@ h2 {
 #header2 {
     padding: 5px;
     justify-content: center;
+    width: auto;
 }
 hr {
     height: 2px;
@@ -220,7 +229,7 @@ main {
 }
 nav {
 	margin: 0 auto;
-	max-width: 760px;
+	max-width: auto;
 
 }
 .nav {

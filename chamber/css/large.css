@@ -7,7 +7,7 @@ main {
 
 header {
     display: flex;
-
+    min-width: fit-content;
 }
 
 .header-text{
@@ -31,6 +31,11 @@ h2 {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+#sm {
+    display: flex;
+    padding-left: 8em;
+    
+}
 .nav ul {
     display: flex;
     flex-direction: row; 
@@ -39,7 +44,7 @@ h2 {
     background-color: rgb(10, 10, 64);
     height:5em;
     font-size: 20px;
-    width: 33em;
+    width: auto;
     padding-left: 3em;
     justify-content: space-between;
 }
@@ -110,6 +115,7 @@ h2 {
     height: 11.5em;
 }
 #hero-join {
+    right: -10em;
     bottom: -20em;
 }
 #spot3 {

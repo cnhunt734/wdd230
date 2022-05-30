@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="(min-width:38em)">
-    <link rel="stylesheet" href="css/large.css" media="(min-width:1080px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width:1025px)">
     <title>Chamber Homepage</title>
 </head>
 
 <body>
-    <header><div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div></header>
+    <header>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </header>
     <header>
         <div class="header-text">
-            <img id="icon" src="images/dinosaur-icon-opt.png" alt="dino-icon" width="128" height="128">
+            <img id="icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="128" height="128">
             <h1>Dinosaur</h1>
             <h2>Chamber of Commerce</h2>
         </div>
@@ -41,60 +43,78 @@
         <section class="small-box" id="eventbx">
             <div>⚑ Sign up for the Canyon Crossroad 5k! ⚑</div>
             <p>Come support us in our annual 5k charity run, June 5 at 6:30am!</p>
-            <a href="#"><p class="more-info">more info...</p></a>
+            <a href="#">
+                <p class="more-info">more info...</p>
+            </a>
         </section>
         <section class="big-box">
-            <div id="hero-div">
+            <img class="hero-img" src="images/dinosaur-hero-960.webp" alt="hero"
+                srcset="images/dinosaur-hero-960.webp 960w,
+                images/dinosaur-hero-500.webp 500w
+                images/dinosaur-hero-300.webp 300w"
+                sizes="(max-width: 60 rem) 100vw,
+                50vw">
+            <div id="hero-div"></div>     
                 <h3 id="hero-txt">Welcome to Dinosaur, CO!</h3>
-                <a href="#"><span></span><div id="hero-join">Join the Chamber</div></a> 
+                <a href="#"><span></span>
+                    <div id="hero-join">Join the Chamber</div>
+                </a>
             </div>
+            
         </section>
         <section class="long-box">
             <div class="spotlight" id="spot1">Billy's Bean Barn
-                <p><img class="spot-icon" src="images/beans-icon.png" alt="BBB" width="148" height="148"></p>
-                <p class="spot-txt">The biggest bean business in the West!</p><hr>
+                <p><img class="spot-icon" src="images/beans-icon.webp" alt="BBB" width="148" height="148"></p>
+                <p class="spot-txt">The biggest bean business in the West!</p>
+                <hr>
                 <p class="spot-contact">bigbeanboys@bbb.com</p>
                 <p class="spot-contact">1-888-808-8342 |<a href="#" class="website">Website</a></p>
             </div>
             <div class="spotlight" id="spot2">Ancestral Arts
-                <p><img class="spot-icon" src="images/pottery2-icon.png" alt="pottery" width="148" height="148"></p>
-                <p class="spot-txt">Authentic Native American pottery, jewelry, and more</p><hr>
+                <p><img class="spot-icon" src="images/pottery2-icon.webp" alt="pottery" width="148" height="148"></p>
+                <p class="spot-txt">Authentic Native American pottery, jewelry, and more</p>
+                <hr>
                 <p class="spot-contact">customerservice@ancestralarts.com</p>
                 <p class="spot-contact">444-444-4444 |<a href="#" class="website">Website</a></p>
             </div>
             <div class="spotlight" id="spot3">Spatula City
-                <p><img class="spot-icon" src="images/spatula-icon.png" alt="spatula" width="148" height="148"></p>
-                <p class="spot-txt">Spatula City: We sell spatulas. And that's all.</p><hr>
+                <p><img class="spot-icon" src="images/spatula-icon.webp" alt="spatula" width="148" height="148"></p>
+                <p class="spot-txt">Spatula City: We sell spatulas. And that's all.</p>
+                <hr>
                 <p class="spot-contact">spatulacity@gmail.com</p>
                 <p class="spot-contact">141-414-1414 |<a href="#" class="website">Website</a></p>
             </div>
-        </section>  
+        </section>
         <section class="small-box" id="weatherbx">
             <div id="weather-div">Weather</div>
             <img class="weather-icon" src="images/partly-cloudy-icon.png" alt="partly cloudy">
-            <p id="weather-temp">64°F</p>
-            <p id="weather-desc">Partly Cloudy</p>
-            <p class="weather-txt">Wind Speed</p>
-            <p class="weather-txt">8 mph NNW</p>
-            <p class="weather-txt">Wind Chill</p>
-            <p class="weather-txt">N/A</p>
+            
+                <p id="weather-temp"><span id="temp">42</span>&deg;F</p>
+                <p id="weather-desc">Partly Cloudy</p>
+                <p class="weather-txt">Wind Speed</p>
+                <p class="weather-txt"><span id="windspeed">16</span> MPH</p>
+                <p class="weather-txt">Wind Chill</p>
+                <p class="weather-txt"><span id="windchill">N/A</span></p>
+            
         </section>
         <section class="small-box" id="joinbx">
-            <a href="#"><span></span><div id="join">Join us!</div></a>
+            <a href="#"><span></span>
+                <div id="join">Join us!</div>
+            </a>
             <p>Discover how to join the Dinosaur Chamber of Commerce and how it will benefit your organization!</p>
         </section>
 
         <section class="med-box">
             <div>News Release</div>
             <p id="news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique soluta atque dignissimos,
-                 vitae nisi numquam odio ipsam possimus quo aliquam quis repudiandae neque ea alias delectus
-                  exercitationem itaque quaerat. Fugiat.
+                vitae nisi numquam odio ipsam possimus quo aliquam quis repudiandae neque ea alias delectus
+                exercitationem itaque quaerat. Fugiat.
             </p>
         </section>
 
     </main>
     <footer id="foot1">
-        <img id="foot-icon" src="images/dinosaur-icon-opt.png" alt="dino-icon" width="164" height="164">
+        <img id="foot-icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="164" height="164">
         <div id="address">
             <h3>Dinosaur Chamber of Commerce</h3>
             <p>317 Stegosaurus Fwy PO Box 238</p>
@@ -108,10 +128,11 @@
     </footer>
     <hr>
     <footer id="foot2">
-        <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification: <span id="lastmod"></span></p>
+        <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification: <span
+                id="lastmod"></span></p>
         <script src="js/script.js"></script>
     </footer>
-    
+
 
 </body>
 
