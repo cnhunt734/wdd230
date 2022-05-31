@@ -37,7 +37,8 @@ section {
 .big-box {
     order: -2;
     color: black;
-    text-shadow: 2px 2px 10px #556B2F
+    text-shadow: 2px 2px 10px #556B2F;
+    padding: 0;
 }
 #eventbx {
     order: -1;
@@ -52,12 +53,11 @@ section {
 }
 #hero-div{
     position: relative;
-    
 }
 #hero-join {
     position: absolute;
-    right: 1.5em;
-    bottom: 11em;
+    right: 1em;
+    bottom: 2em;
     height: 60px;
     border-radius: 20px;
     padding-top: 20px;
@@ -67,7 +67,8 @@ section {
 #hero-txt {
     color: black;
     text-shadow: 2px 2px 10px #556B2F;
-    
+    position: absolute;
+    bottom: 7em;
 }
 .hero-img {
     width: 100%;

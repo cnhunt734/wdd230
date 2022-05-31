@@ -115,8 +115,10 @@ h2 {
     height: 11.5em;
 }
 #hero-join {
-    right: -10em;
-    bottom: -20em;
+    right: 1em;
+}
+#hero-txt {
+    bottom: 19em;
 }
 #spot3 {
     display: flex;
