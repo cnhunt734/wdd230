@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 1rem;
+        }
+
+        .gallery img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery-item {
+            border: 1px solid black;
+        }
+
+        .gallery-label {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .gallery-item:hover {
+            box-shadow: 0 0 30px #555;
+        }
+
+        @media screen and (min-width: 56rem) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 90rem) {
+            .gallery {
+                grid-template-columns: 1fr 1fr 1fr;
+                max-width: 90rem;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galery Demo</h1>
+    </header>
+    <main>
+        <h2>Image Gallery</h2>
+        <article class="gallery">
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=0" alt="pic1" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=1" alt="pic2" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=2" alt="pic3" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=3" alt="pic4" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=4" alt="pic1" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=5" alt="pic6" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=6" alt="pic7" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=7" alt="pic8" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=8" alt="pic9" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=9" alt="pic10" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=10" alt="pic11" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+            <article class="gallery-item">
+                <picture>
+                    <img loading="lazy" src="https://picsum.photos/400/300?random=11" alt="pic12" width="400" height="300">
+                </picture>
+                <div class="gallery-label">
+                    A neat picture
+                </div>
+            </article>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        let imagesToLoad = document.querySelectorAll('img[data-src]');
+
+        const imgOptions = {
+            threshold: 1,
+            rootMargin: "0px 0px 50px 0px"
+        };
+
+        const loadImages = (images) => {
+            image.setAttribute('src', image.getAttribute('data-src'));
+            image.onload = () => {
+                image.removeAttribute('data-src');
+            };
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((items, observer) => {
+                items.forEach((item) => {
+                    if (item.isIntersecting) {
+                        loadImages(item.target);
+                        observer.unobserve(item.target);
+                    }
+                });
+            });
+            imagesToLoad.forEach((img) => {
+                observer.observe(img);
+            });
+        } else {
+            imagesToLoad.forEach((img) => {
+                loadImages(img);
+            });
+        }
+    </script>
+</body>
+
+</html>
