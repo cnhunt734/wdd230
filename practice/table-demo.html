@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        th, td {
+            border: 1px solid black;
+            padding: .25em 0.5em;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead{
+                background-color: #ccc;
+        }
+        tr:nth-child(even){
+            background-color: #eee;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Demo</h1>
+    <table>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">Student GPAs</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Major</th>
+                    <th scope="col">GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Student1</th>
+                    <td>Bob</td>
+                    <td>WDD</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Student2</th>
+                    <td>Sue</td>
+                    <td colspan="2" class="center">SWE</td>
+                </tr>
+                <tr>
+                    <th scope="row">Student3</th>
+                    <td>Jill</td>
+                    <td>CS</td>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Student4</th>
+                    <td>Gungo</td>
+                    <td>ACCTG</td>
+                    <td>1.7</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="center">&copy; Copyright 2022</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

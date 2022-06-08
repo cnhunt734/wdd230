@@ -27,13 +27,6 @@ if (date.getDay() == 1 || date.getDay() == 2) {
     document.querySelector('#banner').style.display = "block";
 }
 
-const temperature = parseFloat(document.querySelector('#temp').textContent);
-const windspeed = parseFloat(document.querySelector('#windspeed').textContent);
-if (temperature <= 50 && windspeed > 3) {
-    document.querySelector('#windchill').textContent = Math.round(35.74 + (.6215 * temperature) - (35.75 * Math.pow(windspeed, .16)) +
-        (.4275 * temperature * Math.pow(windspeed, .16)), 0) + '°F'
-}
-
 let lastVisitDate;
 const now1 = Date.now();
 
@@ -48,7 +41,4 @@ window.localStorage.setItem('last-visit-date', now1);
 const secondsSinceLastVisit = Math.floor((now1 - lastVisitDate) / 1000);
 const daysSinceLastVisit = Math.floor(secondsSinceLastVisit / (60 * 60 * 24));
 
-console.log(daysSinceLastVisit);
-
-document.querySelector('#seconds-ago').textContent = secondsSinceLastVisit;
 document.querySelector('#days-ago').textContent = daysSinceLastVisit;

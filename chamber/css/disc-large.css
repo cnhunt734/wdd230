@@ -1,0 +1,90 @@
+main {
+    max-width: 50em;
+    margin: .5em auto;
+}
+
+header {
+    display: flex;
+    min-width: fit-content;
+}
+
+.header-text{
+    display: grid;
+    grid-template-columns: 7em 15em;
+}
+#icon {
+    margin-top: 20px;
+    height: 96px;
+    width: auto;
+    grid-row: 1/2;
+}
+h1 {
+    padding:0;
+    font-size: 40px;
+}
+#head2 {
+    margin-top: -50px;
+    font-size: 20px;
+}
+#sm {
+    display: flex;
+    padding-left: 8em;
+    
+}
+.nav ul {
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none;
+    align-items: center;
+    background-color: rgb(10, 10, 64);
+    height:5em;
+    font-size: 20px;
+    width: auto;
+    padding-left: 3em;
+    justify-content: space-between;
+}
+.nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: beige;
+}
+.nav a:hover{
+    background-color: yellow;
+    color: black;
+    height: 32px;
+    padding-top: 20px;
+    border-radius: 3px;
+    padding:3px;
+}
+.social {
+    height: 36px;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    order: 1;
+}
+#fb {
+    margin-left: auto;
+}
+#lnk {
+    margin-right: auto;
+}
+.nav {
+    display: flex;
+}
+.nav li {
+    display: block; 
+    flex: 1 1 auto;
+}
+.nav a {
+    text-align: center;
+}
+.nav li:first-child {
+    display: none;
+}
+.gallery {
+    grid-template-columns: 1fr;
+    max-width: 90rem;
+    margin: auto;
+}
