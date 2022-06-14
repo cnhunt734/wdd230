@@ -302,3 +302,6 @@ form label.required::after{
 input:invalid {
     box-shadow: 0 0 2px 1px red;
 }
+#submitbtn {
+    cursor: pointer;
+}
