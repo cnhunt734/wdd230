@@ -79,4 +79,10 @@ a:visited { text-decoration: none; }
     display: flex;
     flex-direction: column;
 }
-
+form, textarea {
+    max-width: 24em;
+}
+form input {
+    margin-bottom: 1em;
+    padding: .5em;
+}
