@@ -1,6 +1,7 @@
 * {
     margin: 2px;
     padding: 0 8px 0 8px;
+    box-sizing: border-box;
 }
 #banner {
     display: none;
@@ -17,6 +18,9 @@ section {
     background-color: #556B2F;
     height: 12em;
     font-size: 20px;
+}
+.join-section {
+    height: auto;
 }
 .long-box {
     height: 35em;
@@ -184,6 +188,7 @@ h2 {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+
 #header2 {
     padding: 5px;
     justify-content: center;
@@ -230,7 +235,7 @@ main {
 }
 nav {
 	margin: 0 auto;
-	max-width: auto;
+	width: auto;
 
 }
 .nav {
@@ -269,4 +274,31 @@ nav {
 }
 .responsive a.menu::before {
 	content: "❌ ";
+}
+
+form, textarea{
+    max-width: 18em;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+form label, form input {
+    display: block;
+    width: 100%;
+}
+label input {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+form input {
+    margin-bottom: 1em;
+    padding: .75em;
+}
+form label.required::after{
+    content: " *";
+    color: red;
+}
+input:invalid {
+    box-shadow: 0 0 2px 1px red;
 }

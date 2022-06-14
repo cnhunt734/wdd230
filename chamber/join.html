@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 week 5 for Caleb Hunt - Continue the Chamber of 
+    Commerce homepage">
+    <link rel="shortcut icon" href="images/dinosaur.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width:38em)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width:1025px)">
+    <title>Chamber Join Page</title>
+</head>
+
+<body>
+    <header>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </header>
+    <header>
+        <div class="header-text">
+            <a href="index.html" class="home-link">
+                <img id="icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="128" height="128">
+            </a>
+            <h1>Dinosaur</h1>
+            <h2 id="head2">Chamber of Commerce</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a class="menu" href="#">☰</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img class="social" id="fb" src="images/facebook-icon.png" alt="FB icon" width="64" height="64">
+        <img class="social" id="lnk" src="images/linkedin-icon.png" alt="LI icon" width="64" height="64">
+    </header>
+    <hr>
+    <header id="header2"><span id="spanDate"></span></header>
+        <main class="join-main">
+            <section class="join-section">
+            <h1>Join the Dinosaur Chamber of Commerce</h1>
+            <form method="get" action="thankyou.html">
+                <label for="firstname" class="required">First Name:</label>
+                <input type="text" name="firstname" id="firstname" autofocus required>
+
+                <label for="firstname" class="required">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" required>
+
+                <label for="position">Postion Title:</label>
+                <input type="text" name="position" id="position" pattern="\w{7+}">
+
+                <label for="email" class="required">Email: (email@example.com)</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+                <label for="phone" class="required">Phone Number: (999-999-9999)</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}" required>
+
+                <label for="bus-name" class="required">Business Name:</label>
+                <input type="text" name="bus-name" id="bus-name" required>
+
+                <label for="membership">Membership Level</label>
+                <input list="membership-lvl" name="membership" id="membership">
+                <datalist id="membership-lvl">
+                    <option value="NP Memberhsip">
+                    <option value="Bronze Membership">
+                    <option value="Silver Membership">
+                    <option value="Gold Membership">
+                </datalist>
+
+                <label for="bus-desc">Business Description:</label>
+                <textarea name="bus-desc" id="bus-desc" rows="4" cols="25" placeholder="Enter a business description here."></textarea>
+
+                <input type="hidden" name="datetime" id="datetime">
+
+                <input type="submit" value="Sign up">
+
+            </form>
+        </section>
+        </main>
+        <footer id="foot1">
+            <img id="foot-icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="164" height="164">
+            <div id="address">
+                <h3>Dinosaur Chamber of Commerce</h3>
+                <p>317 Stegosaurus Fwy PO Box 238</p>
+                <p>Dinosaur, Colorado 81610</p>
+            </div>
+            <div id="contact">
+                <p>info@dinosaurchamber.org</p>
+                <p>+(1)-970-847-3469</p>
+                <p>📍 Location Map</p>
+            </div>
+        </footer>
+        <hr>
+        <footer id="foot2">
+            <div id="foot2div">
+                <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
+                    <span id="lastmod"></span></p>
+                <p>Last visited <span id="days-ago">0</span> days ago.</p>
+            </div>
+            <script src="js/script.js"></script>
+        </footer>
+
+
+</body>
+
+</html>

@@ -75,5 +75,8 @@ a:visited { text-decoration: none; }
     margin: auto 0;
     padding-left: 5em;
 }
-
+.join-main {
+    display: flex;
+    flex-direction: column;
+}
 

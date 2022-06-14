@@ -11,6 +11,7 @@ header {
 .header-text{
     display: grid;
     grid-template-columns: 7em 15em;
+    gap: .5em;
 }
 #icon {
     margin-top: 20px;

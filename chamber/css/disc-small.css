@@ -182,3 +182,6 @@ nav {
 .responsive a.menu::before {
 	content: "❌ ";
 }
+.home-return{
+    color: blue;
+}
