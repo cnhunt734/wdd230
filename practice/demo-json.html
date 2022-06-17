@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero JSON practice</title>
+</head>
+<body>
+    <div id="result"></div>
+
+    <script>
+        const url = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+
+        const resultElement = document.querySelector('#result');
+        fetch(url)
+        .then( response => response.json() )
+        .then( data => {
+            const h1 = document.createElement('h1');
+            h1.textContent = data['squadName'];
+
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            const p3 = document.createElement('p');
+            const p4 = document.createElement('p');
+
+            p1.textContent = `Hometown: ${data['homeTown']}`;
+            p2.textContent = `Date Formed: ${data['formed']}`;
+            p3.textContent = `Secret Base: ${data['secretBase']}`;
+            p4.textContent = `Active: ${(data['active']) ? "Yes":"No"}`;
+
+            resultElement.appendChild(h1);
+            resultElement.appendChild(p1);
+            resultElement.appendChild(p2);
+            resultElement.appendChild(p3);
+            resultElement.appendChild(p4);
+
+
+            const section = document.createElement('section');
+            const h2 = document.createElement('h2');
+            h2.textContent = "Members";
+            section.appendChild(h2);
+
+            data['members'].foreach(
+                member => {
+                    const element = populateMember(member);
+                    section.appendChild(h2);
+                }
+            );
+
+            function populateMember(member)
+            {
+                const s1 = document.createElement('section');
+                const h3 = document.createElement('h3');
+                const p1 = document.createElement('p');
+                const p2 = document.createElement('p');
+                const ul = document.createElement('ul');
+
+                h3.textContent = member['name'];
+                p1.textContent = member['age'];
+                p2.textContent = member['secretIdentity'];
+
+                member['powers'].foreach( power=>{
+                    const li = document
+                    .createElement('li');
+                    li.textContent = power;
+                    ul.appendChild(li);
+                });
+
+                s1.appendChild(h3);
+                s1.appendChild(p1);
+                s1.appendChild(p2);
+                s1.appendChild(ul);
+
+                return s1;
+            };
+
+        });
+
+    </script>
+</body>
+</html>

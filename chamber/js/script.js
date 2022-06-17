@@ -52,6 +52,3 @@ console.log(daysSinceLastVisit);
 
 document.querySelector('#seconds-ago').textContent = secondsSinceLastVisit;
 document.querySelector('#days-ago').textContent = daysSinceLastVisit;
-
-let now2 = Date.now();
-document.querySelector('#datetime').value = now2;

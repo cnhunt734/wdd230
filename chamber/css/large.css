@@ -145,3 +145,17 @@ h2 {
     flex-direction: column;
     font-family: Georgia, serif;
 }
+.join-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.join-section h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+.memb-lvl {
+    padding-top: 2em;
+    max-width: 18em;
+    border: 1px solid lightgrey;
+    width: fit-content;
+}

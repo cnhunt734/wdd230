@@ -82,6 +82,9 @@ a:visited { text-decoration: none; }
 form, textarea {
     max-width: 24em;
 }
+textarea {
+    width: 22em;
+}
 form input {
     margin-bottom: 1em;
     padding: .5em;
