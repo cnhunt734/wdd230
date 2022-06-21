@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    color: rgb(56, 56, 150);
+}
+h1 {
+    font-weight: bold;
+    color: #000;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0 0 15px #999;
+}
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: .5em   ;
+}
+section {
+    background-color: rgb(179, 179, 209);
+}
+h2 {
+    font-weight: bolder;
+    font-size: 36px;
+}
+p {
+    color: black;
+    font-weight: bold;
+}
+img {
+    width: 75%;
+}
