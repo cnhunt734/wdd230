@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD230 week 9 for Caleb Hunt - Chamber of Commerce Directory">
+    <link rel="shortcut icon" href="images/dinosaur.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width:38em)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width:1025px)">
+    <title>Chamber Directory</title>
 </head>
+
 <body>
+
+    <header>
+        <div class="header-text">
+            <a href="index.html" class="home-link">
+                <img id="icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="128" height="128">
+            </a>
+            <h1>Dinosaur</h1>
+            <h2 id="head2">Chamber of Commerce</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a class="menu" href="#">☰</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img class="social" id="fb" src="images/facebook-icon.png" alt="FB icon" width="64" height="64">
+        <img class="social" id="lnk" src="images/linkedin-icon.png" alt="LI icon" width="64" height="64">
+    </header>
+    <hr>
+    <header id="header2"><span id="spanDate"></span></header>
+
+   <main class="dir-main">
     
+    <div class="dir-menu">
+		<button id="grid">⋮⋮⋮</button>
+		<button id="list">☰</button>
+	</div>
+    <article class="grid"></article>
+    <script src="js/directory.js"></script>
+   </main>
+
+        <footer id="foot1">
+            <img id="foot-icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="164" height="164">
+            <div id="address">
+                <h3>Dinosaur Chamber of Commerce</h3>
+                <p>317 Stegosaurus Fwy PO Box 238</p>
+                <p>Dinosaur, Colorado 81610</p>
+            </div>
+            <div id="contact">
+                <p>info@dinosaurchamber.org</p>
+                <p>+(1)-970-847-3469</p>
+                <p>📍 Location Map</p>
+            </div>
+        </footer>
+        <hr>
+        <footer id="foot2">
+            <div id="foot2div">
+                <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
+                    <span id="lastmod"></span></p>
+                <p>Last visited <span id="days-ago">0</span> days ago.</p>
+            </div>
+        </footer>
+
+
 </body>
+
 </html>

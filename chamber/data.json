@@ -1,0 +1,103 @@
+{
+    "businesses": [
+        {
+            "name": "Billy's Bean Barn",
+            "address": "888 Garbanzo Rd",
+            "city": "Durango",
+            "state": "CO",
+            "zip": 81301,
+            "phone": "1-888-808-8342",
+            "website": "www.bbb.com",
+            "membership": "gold",
+            "logo": "images/beans-icon.webp"
+        },
+        {
+            "name": "Ancestral Arts",
+            "address": "42 Triceratops Rd",
+            "city": "Dinosaur",
+            "state": "CO",
+            "zip": 81610,
+            "phone": "444-444-4444",
+            "website": "www.ancestralarts.com",
+            "membership": "silver",
+            "logo": "images/pottery2-icon.webp"
+        },
+        {
+            "name": "Spatula City",
+            "address": "156 Gregory St",
+            "city": "Colorado Springs",
+            "state": "CO",
+            "zip": 80907,
+            "phone": "141-414-1414",
+            "website": "www.spatulacity.com",
+            "membership": "gold",
+            "logo": "images/spatula-icon.webp"
+        },
+        {
+            "name": "Colorado Web",
+            "address": "9412 Murphy Ave",
+            "city": "Denver",
+            "state": "CO",
+            "zip": 80209,
+            "phone": "312-462-9137",
+            "website": "www.coweb.com",
+            "membership": "bronze",
+            "logo": "images/CO-web-icon.png"
+        },
+        {
+            "name": "Jackson Law",
+            "address": "908 Moose Ln",
+            "city": "Colorado Springs",
+            "state": "CO",
+            "zip": 80907,
+            "phone": "515-608-9134",
+            "website": "www.jacksonlaw.com",
+            "membership": "bronze",
+            "logo": "images/jackson-law-icon.png"
+        },
+        {
+            "name": "Arroyo Farms",
+            "address": "145 Alameda Rd",
+            "city": "Farmington",
+            "state": "NM",
+            "zip": 87402,
+            "phone": "505-614-8611",
+            "website": "www.arroyofarms.com",
+            "membership": "silver",
+            "logo": "images/arroyo-farms-icon.png"
+        },
+        {
+            "name": "Southwest Higher Education",
+            "address": "5718 Hamilton Rd",
+            "city": "Durango",
+            "state": "CO",
+            "zip": 81301,
+            "phone": "979-555-8064",
+            "website": "www.swhe.com",
+            "membership": "np",
+            "logo": "images/swhe-icon.png"
+        },
+        {
+            "name": "Calvin's Paints",
+            "address": "649 Tungsten Ave",
+            "city": "Colorado Springs",
+            "state": "CO",
+            "zip": 80907,
+            "phone": "613-945-9869",
+            "website": "www.calvinspaints.com",
+            "membership": "bronze",
+            "logo": "images/calvins-paints-icon.png"
+        },
+        {
+            "name": "The Hat Place",
+            "address": "916 Tyrannosaurus Rd",
+            "city": "Dinosaur",
+            "state": "CO",
+            "zip": 81610,
+            "phone": "516-999-8465",
+            "website": "www.hatplace.com",
+            "membership": "silver",
+            "logo": "images/hat-place-icon.png"
+        }
+    ]
+}

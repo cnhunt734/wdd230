@@ -21,6 +21,7 @@ section {
 }
 .join-section {
     height: auto;
+    background-color: #556B2F;
 }
 .long-box {
     height: 35em;
@@ -157,6 +158,9 @@ header, footer {
     padding: 0;
     margin: 0;
 }
+header{
+    width: fit-content;
+}
 main div {
     font-size: 28px;
     color: rgb(255, 255, 103);
@@ -192,7 +196,7 @@ h2 {
 #header2 {
     padding: 5px;
     justify-content: center;
-    width: auto;
+    display: none;
 }
 hr {
     height: 2px;
@@ -236,7 +240,6 @@ main {
 nav {
 	margin: 0 auto;
 	width: auto;
-
 }
 .nav {
 	list-style: none;
@@ -277,7 +280,7 @@ nav {
 }
 
 form, textarea{
-    max-width: 18em;
+    max-width: 36em;
     margin: 0 auto;
     border: 1px solid #ccc;
     padding: 1em;
@@ -311,4 +314,105 @@ input:invalid {
 }
 .join-section article {
     font-size: 18px;
+}
+
+.dir-main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 71em;
+    font-size: 12px;
+}
+
+.dir-menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #000000;
+	text-align: center;
+
+}
+
+.menu button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #556B2F;
+    height: max-content;
+}
+
+.grid {
+	display: grid;
+    grid-template-columns: 1fr;
+	align-items: center;
+    width: auto;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 .5rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none;
+}
+
+section h3 {
+	font-size: 1rem;
+}
+
+.dir-img {
+	height: 75px;
+	max-width: 100%;
+}
+.dir-a {
+    color: white;
+    text-decoration: underline;
+ }
+ .list .dir-address{
+    display: none;
+ }
+ .list .dir-h2{
+    padding-top: .5em;
+    padding-bottom: .5em;
+ }
+ .list .dir-phone {
+    display: none;
+ }
+.grid p {
+    padding-bottom: .5em;
+}
+.grid h2 {
+    padding-bottom: .5em;
 }

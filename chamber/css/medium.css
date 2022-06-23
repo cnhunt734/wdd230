@@ -2,6 +2,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+header, footer {
+    width: auto;
+}
+header2 {
+    display: contents;
+}
 .menu {
     font-size: 30px;
 }
@@ -89,3 +95,18 @@ form input {
     margin-bottom: 1em;
     padding: .5em;
 }
+.grid{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.list section img {
+    display: block;
+}
+.dir-main{
+    display: block;
+}
+.list .dir-address{
+    display: block;
+ }
+ .list .dir-phone {
+    display: block;
+ }
