@@ -1,0 +1,14 @@
+body {
+    padding: 1em;
+    padding-left: 4em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-shadow: 0 0 30px black;
+}
+p {
+    font-size: 20px;
+}
+#current-temp{
+    font-weight: bold;
+}

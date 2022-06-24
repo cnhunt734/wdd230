@@ -196,7 +196,9 @@ h2 {
 #header2 {
     padding: 5px;
     justify-content: center;
-    display: none;
+}
+#dir-header2 {
+    display:none
 }
 hr {
     height: 2px;
@@ -266,7 +268,7 @@ nav {
 	background-color: yellow;
     color: black;
     border-radius: 3px;
-    padding:3px;
+
 }
 
 .responsive li {
