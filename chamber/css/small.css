@@ -138,6 +138,9 @@ a:visited{
     text-decoration: underline;
     text-align: right;
 }
+#weather-desc::first-letter {
+    text-transform:capitalize;
+}
 
 .weather-txt{
     padding: 1px;
