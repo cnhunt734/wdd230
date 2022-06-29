@@ -21,8 +21,8 @@ const windSpeed = document.querySelector('#windspeed');
 
 const baseUrl= "https://api.openweathermap.org/data/2.5/weather";
 
-const cityName = "Rexburg";
-const stateCode = "ID";
+const cityName = "Rangely";
+const stateCode = "CO";
 const countryCode = "US";
 const appid = "8af6001c6baede227c9b9e34f19bac44";
 const units = "imperial";

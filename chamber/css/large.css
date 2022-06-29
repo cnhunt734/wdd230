@@ -121,7 +121,8 @@ h2 {
     right: 1em;
 }
 #hero-txt {
-    bottom: 19em;
+   font-size: 36px;
+    bottom: 16em;
 }
 #spot3 {
     display: flex;
