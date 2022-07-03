@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD230 Caleb Hunt - Chamber of Commerce Homepage">
     <link rel="shortcut icon" href="images/dinosaur.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="(min-width:38em)">
     <link rel="stylesheet" href="css/large.css" media="(min-width:1025px)">
-    <title>Chamber Homepage</title>
+    <title>Dinosaur Chamber of Commerce</title>
 </head>
 
 <body>
@@ -32,14 +36,16 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img class="social" id="fb" src="images/facebook-icon.png" alt="FB icon" width="64" height="64">
-        <img class="social" id="lnk" src="images/linkedin-icon.png" alt="LI icon" width="64" height="64">
+        <a class="social" id="fb" href="https://www.facebook.com/"><img class="social" src="images/facebook-icon.png"
+                alt="FB icon" width="64" height="64"></a>
+        <a class="social" id="lnk" href="https://www.linkedin.com/"><img class="social" src="images/linkedin-icon.png"
+                alt="LI icon" width="64" height="64"></a>
     </header>
     <hr>
-    <header id="header2"><span id="spanDate"></span></header>
+    <header id="header2"><span class="span-date"></span></header>
     <main>
         <section class="small-box" id="eventbx">
             <div>⚑ Sign up for the Canyon Crossroad 5k! ⚑</div>
@@ -50,7 +56,6 @@
         </section>
         <section class="big-box">
             <img class="hero-img" src="images/dinosaur-hero-960.webp" alt="hero" srcset="images/dinosaur-hero-960.webp 960w,
-                images/dinosaur-hero-500.webp 500w
                 images/dinosaur-hero-300.webp 300w">
             <div id="hero-div">
                 <h3 id="hero-txt">Welcome to Dinosaur, CO!</h3>
@@ -64,27 +69,27 @@
                 <p><img class="spot-icon" src="images/beans-icon.webp" alt="BBB" width="148" height="148"></p>
                 <p class="spot-txt">The biggest bean business in the West!</p>
                 <hr>
-                <p class="spot-contact">bigbeanboys@bbb.com</p>
-                <p class="spot-contact">1-888-808-8342 |<a href="#" class="website">Website</a></p>
+                <p class="spot-email">bigbeanboys@bbb.com</p>
+                <p class="spot-phone">1-888-808-8342 |<a href="#" class="website">Website</a></p>
             </div>
             <div class="spotlight" id="spot2">Ancestral Arts
                 <p><img class="spot-icon" src="images/pottery2-icon.webp" alt="pottery" width="148" height="148"></p>
                 <p class="spot-txt">Authentic Native American pottery, jewelry, and more</p>
                 <hr>
-                <p class="spot-contact">customerservice@ancestralarts.com</p>
-                <p class="spot-contact">444-444-4444 |<a href="#" class="website">Website</a></p>
+                <p class="spot-email">customerservice@ancestralarts.com</p>
+                <p class="spot-phone">444-444-4444 |<a href="#" class="website">Website</a></p>
             </div>
             <div class="spotlight" id="spot3">Spatula City
                 <p><img class="spot-icon" src="images/spatula-icon.webp" alt="spatula" width="148" height="148"></p>
                 <p class="spot-txt">Spatula City: We sell spatulas. And that's all.</p>
                 <hr>
-                <p class="spot-contact">spatulacity@gmail.com</p>
-                <p class="spot-contact">141-414-1414 |<a href="#" class="website">Website</a></p>
+                <p class="spot-email">spatulacity@gmail.com</p>
+                <p class="spot-phone">141-414-1414 |<a href="#" class="website">Website</a></p>
             </div>
         </section>
         <section class="small-box" id="weatherbx">
             <div id="weather-div">Weather</div>
-            <img class="weather-icon" src="" alt="">
+            <img class="weather-icon" src="#" alt="#">
 
             <p id="weather-temp"><span id="temp"></span>&deg;F</p>
             <p id="weather-desc"></p>
@@ -103,10 +108,15 @@
 
         <section class="med-box">
             <div>News Release</div>
-            <p id="news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique soluta atque dignissimos,
-                vitae nisi numquam odio ipsam possimus quo aliquam quis repudiandae neque ea alias delectus
-                exercitationem itaque quaerat. Fugiat.
+            <h2>
+                Dinosaur National Monument and Utah National Guard embark on Innovative Readiness Training Partnership
+                to benefit national park visitors
+            </h2>
+            <p id="news">Dinosaur National Monument and the Utah National Guard have entered into a
+                partnership by which the guard will carry out construction-related training activities in the
+                monument through 2025.
             </p>
+            <a href="https://www.nps.gov/dino/learn/news/newsreleases.htm">Read more</a>
         </section>
 
     </main>
@@ -125,10 +135,12 @@
     </footer>
     <hr>
     <footer id="foot2">
-        <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification: <span
-                id="lastmod"></span></p>
+        <div id="foot2div">
+            <p>&copy; <span class="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
+                <span class="lastmod"></span></p>
+            <p>Last visited <span id="days-ago"></span> days ago.</p>
+        </div>
         <script src="js/script.js"></script>
-        <script src="js/main.js"></script>
     </footer>
 
 

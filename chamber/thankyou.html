@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD230 week 5 for Caleb Hunt - Continue the Chamber of 
-    Commerce homepage">
+    <meta name="description" content="Dinosaur Chamber of Commerce Join form thank you page">
     <link rel="shortcut icon" href="images/dinosaur.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/disc-small.css">
     <link rel="stylesheet" href="css/disc-medium.css" media="(min-width:38em)">
@@ -34,11 +37,13 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img class="social" id="fb" src="images/facebook-icon.png" alt="FB icon" width="64" height="64">
-        <img class="social" id="lnk" src="images/linkedin-icon.png" alt="LI icon" width="64" height="64">
+        <a class="social" id="fb" href="https://www.facebook.com/"><img class="social" src="images/facebook-icon.png"
+                alt="FB icon" width="64" height="64"></a>
+        <a class="social" id="lnk" href="https://www.linkedin.com/"><img class="social" src="images/linkedin-icon.png"
+                alt="LI icon" width="64" height="64"></a>
     </header>
     <hr>
     <header id="header2"><span id="spanDate"></span></header>
@@ -66,9 +71,9 @@
     <hr>
     <footer id="foot2">
         <div id="foot2div">
-            <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
-                <span id="lastmod"></span></p>
-            <p>Last visited <span id="days-ago">0</span> days ago.</p>
+            <p>&copy; <span class="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
+                <span class="lastmod"></span></p>
+            <p>Last visited <span id="days-ago"></span> days ago.</p>
         </div>
         <script src="js/main.js"></script>
     </footer>

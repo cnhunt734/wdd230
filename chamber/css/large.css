@@ -160,3 +160,26 @@ h2 {
     border: 1px solid lightgrey;
     width: fit-content;
 }
+.cont-main {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, serif;
+}
+.cont-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cont-section h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 1em;
+    max-width: 18em;
+    border: 1px solid lightgrey;
+    width: auto;
+    
+}

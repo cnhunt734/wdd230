@@ -28,17 +28,17 @@ if (date.getDay() == 1 || date.getDay() == 2) {
 }
 
 let lastVisitDate;
-const now1 = Date.now();
+const now2 = Date.now();
 
 if (window.localStorage.getItem('last-visit-date')) {
     lastVisitDate = window.localStorage.getItem('last-visit-date')
 } else {
-    lastVisitDate = now1;
+    lastVisitDate = now2;
 }
 
-window.localStorage.setItem('last-visit-date', now1);
+window.localStorage.setItem('last-visit-date', now2);
 
-const secondsSinceLastVisit = Math.floor((now1 - lastVisitDate) / 1000);
+const secondsSinceLastVisit = Math.floor((now2 - lastVisitDate) / 1000);
 const daysSinceLastVisit = Math.floor(secondsSinceLastVisit / (60 * 60 * 24));
 
 document.querySelector('#days-ago').textContent = daysSinceLastVisit;

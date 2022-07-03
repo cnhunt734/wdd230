@@ -58,7 +58,7 @@ header, footer {
     display: flex;
     background-color: rgb(10, 10, 64);
     color: beige;
-    font-family: Georgia, serif;
+    font-family: 'Finlandica', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -127,7 +127,7 @@ h3 {
     padding: 3px;
 }
 .header-text {
-    font-family: Andale Mono, monospace;
+    font-family: 'Finlandica', sans-serif;
     display: grid;
     grid-template-columns: 4em auto;
 }

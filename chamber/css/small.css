@@ -35,7 +35,11 @@ section {
     flex-direction: column;
     align-items: center;
 }
-.spot-contact {
+.spot-email {
+    font-size: 16px;
+    color: #f7e99f;
+}
+.spot-phone {
     font-size: 16px;
     color: #f7e99f;
 }
@@ -155,11 +159,20 @@ a:visited{
     text-align: center;
     font-size: 18px;
 }
+.med-box{
+    font-size: 16px;
+}
+.med-box h2{
+    padding-top: 2.5em;
+}
+.med-box a{
+    color: #ccc;
+}
 header, footer {
     display: flex;
     background-color: rgb(10, 10, 64);
     color: beige;
-    font-family: Georgia, serif;
+    font-family: 'Finlandica', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -233,7 +246,7 @@ h3 {
     padding: 3px;
 }
 .header-text {
-    font-family: Andale Mono, monospace;
+    font-family: 'Finlandica', sans-serif;
     display: grid;
     grid-template-columns: 4em auto;
 }
@@ -420,4 +433,33 @@ section h3 {
 }
 .grid h2 {
     padding-bottom: .5em;
+}
+.contact-p{
+    font-size: 18px;
+}
+.cont-section article {
+    font-size: 18px;
+}
+.cont-section {
+    height: auto;
+    background-color: #556B2F;
+}
+.cont-section h1{
+    text-shadow: 0 0 20px #000000;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-items: center;
+}
+.cont div {
+    width: 11em;
+}
+.cont h3 {
+    font-size: 19px;
+}
+iframe {
+    width: auto;
 }

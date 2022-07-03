@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD230 Caleb Hunt - Chamber of Commerce Join Page">
     <link rel="shortcut icon" href="images/dinosaur.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="(min-width:38em)">
@@ -32,16 +36,18 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img class="social" id="fb" src="images/facebook-icon.png" alt="FB icon" width="64" height="64">
-        <img class="social" id="lnk" src="images/linkedin-icon.png" alt="LI icon" width="64" height="64">
+        <a class="social" id="fb" href="https://www.facebook.com/"><img class="social" src="images/facebook-icon.png"
+                alt="FB icon" width="64" height="64"></a>
+        <a class="social" id="lnk" href="https://www.linkedin.com/"><img class="social" src="images/linkedin-icon.png"
+                alt="LI icon" width="64" height="64"></a>
     </header>
     <hr>
-    <header id="header2"><span id="spanDate"></span></header>
-        <main class="join-main">
-            <section class="join-section">
+    <header id="header2"><span class="span-date"></span></header>
+    <main class="join-main">
+        <section class="join-section">
             <h1>Join the Dinosaur Chamber of Commerce</h1>
             <form method="get" action="thankyou.html">
                 <label for="firstname" class="required">First Name:</label>
@@ -57,7 +63,8 @@
                 <input type="email" name="email" id="email" placeholder="email@example.com" required>
 
                 <label for="phone" class="required">Phone Number: (999-999-9999)</label>
-                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}" required>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}"
+                    required>
 
                 <label for="bus-name" class="required">Business Name:</label>
                 <input type="text" name="bus-name" id="bus-name" required>
@@ -72,7 +79,8 @@
                 </datalist>
 
                 <label for="bus-desc">Business Description:</label>
-                <textarea name="bus-desc" id="bus-desc" rows="4" cols="25" placeholder="Enter a business description here."></textarea>
+                <textarea name="bus-desc" id="bus-desc" rows="4" cols="25"
+                    placeholder="Enter a business description here."></textarea>
 
                 <input type="hidden" name="datetime" id="datetime" value="0">
 
@@ -84,56 +92,63 @@
                 <article id="np">
                     <h3>NP</h3>
                     <p>Monthly Fee: $0</p>
-                    <li>Our free option for nonprofit organizations.</li>
-                    <li>Your business will be placed in our directory.</li>
+                    <ul>
+                        <li>Our free option for nonprofit organizations.</li>
+                        <li>Your business will be placed in our directory.</li>
+                    </ul>
                 </article>
                 <article id="bronze">
                     <h3>Bronze</h3>
                     <p>Monthly Fee: $100</p>
-                    <li>The first membership level for standard businesses.</li>
-                    <li>Opens eligibilty to be featured on the spotlight section of our homepage.</li>
-                    <li>Your business will be placed in our directory.</li>
+                    <ul>
+                        <li>The first membership level for standard businesses.</li>
+                        <li>Opens eligibilty to be featured on the spotlight section of our homepage.</li>
+                        <li>Your business will be placed in our directory.</li>
+                    </ul>
                 </article>
                 <article id="silver">
                     <h3>Silver</h3>
                     <p>Monthly Fee: $200</p>
-                    <li>Receive a 10% discount to be featured on our spotlight.</li>
-                    <li>Your business will be placed in our directory.</li>
+                    <ul>
+                        <li>Receive a 10% discount to be featured on our spotlight.</li>
+                        <li>Your business will be placed in our directory.</li>
+                    </ul>
                 </article>
                 <article id="gold">
                     <h3>Gold</h3>
                     <p>Monthly Fee: $300</p>
-                    <li>Receive a 50% discount to be featured on our spotlight.</li>
-                    <li>Free admission to any chamber-sponsored events</li>
-                    <li>Receive priority status in receiving a booth permit at chamber events</li>
-                    <li>Your business will be placed in our directory.</li>
+                    <ul>
+                        <li>Receive a 50% discount to be featured on our spotlight.</li>
+                        <li>Free admission to any chamber-sponsored events</li>
+                        <li>Receive priority status in receiving a booth permit at chamber events</li>
+                        <li>Your business will be placed in our directory.</li>
+                    </ul>
                 </article>
             </div>
         </section>
-        </main>
-        <footer id="foot1">
-            <img id="foot-icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="164" height="164">
-            <div id="address">
-                <h3>Dinosaur Chamber of Commerce</h3>
-                <p>317 Stegosaurus Fwy PO Box 238</p>
-                <p>Dinosaur, Colorado 81610</p>
-            </div>
-            <div id="contact">
-                <p>info@dinosaurchamber.org</p>
-                <p>+(1)-970-847-3469</p>
-                <p>📍 Location Map</p>
-            </div>
-        </footer>
-        <hr>
-        <footer id="foot2">
-            <div id="foot2div">
-                <p>&copy; <span id="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
-                    <span id="lastmod"></span></p>
-                <p>Last visited <span id="days-ago">0</span> days ago.</p>
-            </div>
-            <script src="js/join-script.js"></script>
-            <script src="js/main.js"></script>
-        </footer>
+    </main>
+    <footer id="foot1">
+        <img id="foot-icon" src="images/dinosaur-icon-opt.webp" alt="dino-icon" width="164" height="164">
+        <div id="address">
+            <h3>Dinosaur Chamber of Commerce</h3>
+            <p>317 Stegosaurus Fwy PO Box 238</p>
+            <p>Dinosaur, Colorado 81610</p>
+        </div>
+        <div id="contact">
+            <p>info@dinosaurchamber.org</p>
+            <p>+(1)-970-847-3469</p>
+            <p>📍 Location Map</p>
+        </div>
+    </footer>
+    <hr>
+    <footer id="foot2">
+        <div id="foot2div">
+            <p>&copy; <span class="year"></span>Dinosaur Chamber | Caleb Hunt | WDD 230 Project | Last Modification:
+                <span class="lastmod"></span></p>
+            <p>Last visited <span id="days-ago"></span> days ago.</p>
+        </div>
+        <script src="js/join-script.js"></script>
+    </footer>
 
 
 </body>
