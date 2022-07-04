@@ -177,7 +177,6 @@ a:visited{
     color: rgb(40, 10, 175);
     border-radius: 5px;
     background-color: #ccc;
-    opacity: .75;
     box-shadow: 1px 1px 10px black;
 }
 header, footer {
