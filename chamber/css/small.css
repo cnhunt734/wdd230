@@ -72,6 +72,7 @@ section {
     padding-top: 20px;
     background-color: rgb(221, 214, 21);
     color: rgb(19, 57, 29);
+    box-shadow: 4px 4px 10px black;
 }
 #hero-txt {
     color: black;
@@ -173,7 +174,11 @@ a:visited{
     padding-top: 2.5em;
 }
 .med-box a{
-    color: #ccc;
+    color: rgb(40, 10, 175);
+    border-radius: 5px;
+    background-color: #ccc;
+    opacity: .75;
+    box-shadow: 1px 1px 10px black;
 }
 header, footer {
     display: flex;
