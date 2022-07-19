@@ -1,0 +1,46 @@
+{
+    "temples": [
+        {
+            "name": "Mesa AZ",
+            "address": "101 S LeSueur",
+            "city": "Mesa",
+            "state": "AZ",
+            "zip": 85204,
+            "phone": "480-833-1211",
+            "services": "Clothing rental, Distribution center nearby",
+            "picture": "images/mesa-temple.webp",
+            "btnid": "like-01"
+        },
+        {
+            "name": "Manhattan NY",
+            "address": "125 Columbus Ave, Fourth Floor",
+            "city": "New York",
+            "state": "NY",
+            "zip": 10023,
+            "phone": "917-441-8220",
+            "services": "Clothing rental, Distribution center nearby",
+            "picture": "images/manhattan-temple.webp",
+            "btnid": "like-02"
+        },
+        {
+            "name": "Albuquerque NM",
+            "address": "10301 San Francisco Rd NE",
+            "city": "Albuquerque",
+            "state": "NM",
+            "zip": 87122,
+            "phone": "505-822-5110",
+            "services": "Clothing rental, Distribution center nearby",
+            "picture": "images/albuquerque-temple.webp",
+            "btnid": "like-03"
+        },
+        {
+            "name": "Indianapolis IN",
+            "address": "11565 Temple Dr",
+            "city": "Carmel",
+            "state": "IN",
+            "zip": 46032,
+            "phone": "480-833-1211",
+            "services": "none",
+            "picture": "images/indianapolis-temple.webp",
+            "btnid": "like-04"
+        }]}

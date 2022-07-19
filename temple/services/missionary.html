@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Temple Inn and Suites missionary service subpage">
+    <link rel="shortcut icon" href="images/temple-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Finlandica&family=Philosopher:ital@0;1&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css" media="(min-width:38em)">
+    <link rel="stylesheet" href="../css/large.css" media="(min-width:52em)">
+    <title>Full-Time Missionary</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <a href="../index.html">
+                <img class="icon" src="../images/temple-icon.webp" alt="temple-icon" width="100" height="100">
+            </a>
+            <h1>Temple</h1>
+            <h2>Inn & Suites</h2>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a class="menu" href="#"><span id="x">X</span><span id="ham">☰</span></a></li>
+                <li><a href="../temple.html">Temples</a></li>
+                <li><a href="../reservation.html">Reservations</a></li>
+                <li><a href="../services">Services</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a class="social" id="fb" href="https://www.facebook.com/"><img class="social"
+                    src="../images/facebook-icon.png" alt="FB icon" width="64" height="64"></a>
+            <a class="social" id="lnk" href="https://www.instagram.com/"><img class="social"
+                    src="../images/instagram-icon.png" alt="IG icon" width="64" height="64"></a>
+        </div>
+
+    </header>
+    <main class="serv-main">
+        <h1>Full-Time Temple Missionaries</h1>
+        <h2>Accomodations</h2>
+        <div class="mission-div">
+            <img src="../images/kitchen.webp" alt="a nice kitchen for missionaries">
+            <p>Each of our hotels has a separate suite for full-time temple missionaries. Occupants will have added 
+                security and reduced distractions with a private elevator that takes them directly to their suite. The
+                missionary suite also contains a kitchen where tenants can cook together, as well as a private fitness 
+                center for conducting morning workouts and P-day recreation. Each room has a bedroom and study area to
+                ensure all mission needs are met.
+            </p>
+            <img src="../images/fitness.webp" alt="fitness rack with dumbbells">
+        </div>
+        <h2>Contact Us to Learn More</h2>
+        <form method="get" action="sent.html">
+            <label for="firstname" class="required">Your First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+
+            <label for="lastname" class="required">Your Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <label for="email" class="required">Email: (email@example.com)</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+            <label for="phone" class="required">Phone Number: (999-999-9999)</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}"
+                required>
+
+            <label for="bus-desc">Your Message:</label>
+            <textarea name="bus-desc" id="bus-desc" rows="4" cols="25"
+                placeholder="Enter your inquiries here"></textarea>
+
+            <input type="submit" id="submitbtn" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <img class="foot-icon" src="../images/temple-icon.webp" alt="temple inn and suites icon" width="164"
+            height="164">
+        <div class="foot-address">
+            <h3>Temple Inn & Suites</h3>
+            <p>4800 Montgomery Ln #300</p>
+            <p>Bethesda, MD 20814</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050188057963!2d-77.0955318!3d38.9832518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658031954945!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="foot-contact">
+            <p>info@templeinnsuites.com</p>
+            <p>+(1)-970-847-3469</p>
+        </div>
+        <div class="foot-info">
+            <p>&copy; <span class="year"></span>Temple Inn & Suites | Caleb Hunt | WDD 230</p>
+        </div>
+        <script src="../js/missionary.js"></script>
+    </footer>
+</body>
+
+</html>
