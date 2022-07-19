@@ -12,6 +12,8 @@ window.onresize = () => {
 };
 //footer year
 document.querySelector(".year").textContent = new Date().getFullYear();
+//Last Modified
+document.querySelector(".lastmod").textContent = document.lastModified;
 //json
 const requestURL = 'data.json';
 const cards = document.querySelector('.temple-div');
@@ -108,4 +110,3 @@ fetch(requestURL)
   
   
                       });
-  

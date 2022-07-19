@@ -13,3 +13,5 @@ menubutton.addEventListener('click', () => {
 window.onresize = () => {
     if (window.innerWidth > 600) mainnav.classList.remove('responsive')
 };
+//Last Modified
+document.querySelector(".lastmod").textContent = document.lastModified;

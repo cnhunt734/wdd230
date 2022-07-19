@@ -43,3 +43,5 @@ fetch(url)
 });
 //footer year
 document.querySelector(".year").textContent = new Date().getFullYear();
+//Last Modified
+document.querySelector(".lastmod").textContent = document.lastModified;
