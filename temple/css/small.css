@@ -51,7 +51,6 @@ iframe{
     width: fit-content;
     grid-column: 1/4;
     height: auto;
-    padding: auto;
 }
 .social {
     height: 3em;
